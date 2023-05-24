@@ -929,7 +929,7 @@ td {
 #game-container {
   padding: 2rem 0;
   margin-top: 0.5rem;
-  height: 100vh;
+  height: auto;
 }
 
 #intro-container p {
@@ -1101,7 +1101,7 @@ td {
 
   /* Esto arregla problemas con el botón y el footer estando demasiado cerca */
   #game-container {
-    min-height: 120vh;
+    min-height: 100vh;
   }
 
   .smGlobalBtn {
@@ -1116,5 +1116,4 @@ td {
   .mobile-menu {
     max-width: 40vh;
   }
-
 }
