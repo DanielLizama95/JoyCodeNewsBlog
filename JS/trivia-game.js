@@ -1,3 +1,5 @@
+//Aquí únicamente hay JS para el juego de trivia. 
+
 const questions = [
   {
     question: "¿Quién es el creador de JavaScript?",

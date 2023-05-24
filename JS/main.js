@@ -1,5 +1,8 @@
-//Esta función nos sirve para que se genere el contenido de los artículos dinámicamente.
+// En este main.js pretendía poner todo el código del sitio, pero mejor opté por separar el código.
+// Lo que hay aquí básicamente son funciones generales que usa todo el sitio, y el JS para generar lo que sale en el index y article.HTML
 
+
+//Esta función nos sirve para que se genere el contenido de los artículos dinámicamente.
 window.addEventListener("load", function () {
   if (window.location.href.includes("articulo.html")) {
     let articleID = window.location.href.split("=")[1];
@@ -52,7 +55,7 @@ heart.addEventListener("mouseenter", () => {
 //Primero seleccionamos el contenedor.
 let featuredGrid = document.querySelector(".featured-grid");
 
-//Luego creamos un array con los datos de la miniatura de cada elemento.
+//Este array es muy importante, puesto que contiene toda la información necesaria para artículos y sus miniaturas.
 let thumbnailData = [
   {
     category: "Engines",
@@ -1381,7 +1384,6 @@ function generateArticle(articleID) {
 
   //Aquí colocamos nombres de chicos para que haya variedad en los comentarios autogenerados.
   //Los obtuve con la API de Randomuser.me y los guardé en un array para no tener que depender del fetch cada vez.
-
   const maleNames = [
     "Gabriel Cortes",
     "David Martínez",

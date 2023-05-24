@@ -1,20 +1,22 @@
-      //Primero ponemos el Javascript para mostrar y ocultar los botones de filtro.
-      const filterIcon = document.getElementById("filter-icon");
-      const filterButtons = document.querySelector(".filter-buttons-container");
+//Javascript para la sección donde están todas las noticias (noticias.html)
 
-      function toggleFilterButtons() {
-        filterButtons.classList.toggle("hidden");
-      }
-      
-      filterIcon.addEventListener("click", toggleFilterButtons);
+//Primero ponemos el Javascript para mostrar y ocultar los botones de filtro.
+const filterIcon = document.getElementById("filter-icon");
+const filterButtons = document.querySelector(".filter-buttons-container");
 
-      function generateAllNewsSection() {
-        const allNewsContainer = document.querySelector(".all-news-container");
+function toggleFilterButtons() {
+  filterButtons.classList.toggle("hidden");
+}
 
-        for (let i = 0; i < thumbnailData.length; i++) {
-          let container = document.createElement("div");
-          container.classList.add("news-list-item-container");
-          container.innerHTML = `
+filterIcon.addEventListener("click", toggleFilterButtons);
+
+function generateAllNewsSection() {
+  const allNewsContainer = document.querySelector(".all-news-container");
+
+  for (let i = 0; i < thumbnailData.length; i++) {
+    let container = document.createElement("div");
+    container.classList.add("news-list-item-container");
+    container.innerHTML = `
       <div class="image-container">
         <a href="articulo.html?content=${thumbnailData[i].id}">
         <img src="${thumbnailData[i].IMG}" alt="${thumbnailData[i].IMGalt}">
@@ -28,28 +30,28 @@
         <p class="summary">${thumbnailData[i].summary}</p>
       </div>
     `;
-          allNewsContainer.appendChild(container);
-        }
-      }
-      generateAllNewsSection();
+    allNewsContainer.appendChild(container);
+  }
+}
+generateAllNewsSection();
 
-      // Y con esto filtramos las noticias a la preferencia del usuario.
+// Y con esto filtramos las noticias a la preferencia del usuario.
 
-      function filterNewsByCategory(newsData, category) {
-        return newsData.filter((news) => news.category === category);
-      }
+function filterNewsByCategory(newsData, category) {
+  return newsData.filter((news) => news.category === category);
+}
 
-      function generateFilteredNewsSection(category) {
-        const filteredNews = filterNewsByCategory(thumbnailData, category);
-        const allNewsContainer = document.querySelector(".all-news-container");
-        const title = document.getElementById("all-news-title");
-        title.innerHTML = `<h2 class="title" id="all-news-title">Todas las noticias sobre: <span>${category}</span></h2>`;
-        // Eliminar el contenido existente del contenedor
-        allNewsContainer.innerHTML = "";
-        for (let i = 0; i < filteredNews.length; i++) {
-          let container = document.createElement("div");
-          container.classList.add("news-list-item-container");
-          container.innerHTML = `
+function generateFilteredNewsSection(category) {
+  const filteredNews = filterNewsByCategory(thumbnailData, category);
+  const allNewsContainer = document.querySelector(".all-news-container");
+  const title = document.getElementById("all-news-title");
+  title.innerHTML = `<h2 class="title" id="all-news-title">Todas las noticias sobre: <span>${category}</span></h2>`;
+  // Eliminar el contenido existente del contenedor
+  allNewsContainer.innerHTML = "";
+  for (let i = 0; i < filteredNews.length; i++) {
+    let container = document.createElement("div");
+    container.classList.add("news-list-item-container");
+    container.innerHTML = `
       <div class="image-container">
         <a href="articulo.html?content=${thumbnailData[i].id}">
         <img src="${filteredNews[i].IMG}" alt="${filteredNews[i].IMGalt}">
@@ -63,11 +65,11 @@
         <p class="summary">${filteredNews[i].summary}</p>
       </div>
     `;
-          allNewsContainer.appendChild(container);
-        }
-      }
-      //Y esto es para restablecer los filtros.
-      function resetFilters() {
+    allNewsContainer.appendChild(container);
+  }
+}
+//Y esto es para restablecer los filtros.
+function resetFilters() {
   const allNewsContainer = document.querySelector(".all-news-container");
   allNewsContainer.innerHTML = ""; // Limpiar el contenedor de noticias
   // Generar todas las noticias sin filtrar

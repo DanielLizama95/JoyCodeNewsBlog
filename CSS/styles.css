@@ -92,14 +92,8 @@ td {
   border-spacing: 0;
 }
 
-/* Evitamos problemas con los SVG */
-svg {
-  width: 100%;
-  display: block;
-  fill: currentColor;
-}
-
 /* Fin del reseteo */
+
 
 /* Estilos de la barra de navegación */
 
@@ -560,7 +554,6 @@ svg {
   background: #fff;
 }
 
-/* linkedin button class*/
 .linkedinBtn {
   background: #0094bc;
 }
@@ -576,7 +569,6 @@ svg {
   background: #fff;
 }
 
-/* pinterest button class*/
 .pinterestBtn {
   background: #cb2027;
 }
@@ -592,7 +584,6 @@ svg {
   background: #fff;
 }
 
-/* tumblr button class*/
 .tumblrBtn {
   background: #3a5876;
 }
@@ -608,7 +599,7 @@ svg {
   background: #fff;
 }
 
-/* rss button class*/
+
 .rssBtn {
   background: #e88845;
 }
@@ -650,7 +641,7 @@ svg {
   color: #07966e;
 }
 
-/* Estilos para la sección de comentarios */
+/* Estilos para la sección de comentarios de los artículos */
 
 .comment-section {
   background-color: #fff;
@@ -735,7 +726,6 @@ svg {
   transition: transform 0.3s ease;
 }
 
-
 .image-container img:hover {
   transform: scale(1.1);
 }
@@ -762,6 +752,8 @@ svg {
   color: var(--mint-green);
   user-select: none;
 }
+
+/* Estilos de la sección de filtrado de noticias */
 
 .filter-bar {
   display: flex;
@@ -831,7 +823,6 @@ svg {
 .contact-main {
   width: min(100ch, 100% - 4rem);
 }
-
 
 .contact-main p {
   font-size: 1.3rem;
@@ -941,10 +932,6 @@ svg {
   height: 100vh;
 }
 
-.trivia-main {
-  height: 100%;
-}
-
 #intro-container p {
   font-size: 2em;
   text-align: center;
@@ -1034,7 +1021,6 @@ svg {
   color: var(--darkViolet);
 }
 
-
 .joy-GIF {
   width: 18rem;
   margin-top: 5rem;
@@ -1108,8 +1094,14 @@ svg {
 }
 
 @media (max-width: 480px) {
+  /* De esta manera las barras azules no molestarán en una vista tan pequeña */
   .main {
     width: 100%;
+  }
+
+  /* Esto arregla problemas con el botón y el footer estando demasiado cerca */
+  #game-container {
+    min-height: 120vh;
   }
 
   .smGlobalBtn {
@@ -1120,6 +1112,7 @@ svg {
     width: 100%;
   }
 
+  /* Para que el menú nunca tenga conflictos con el logo */
   .mobile-menu {
     max-width: 40vh;
   }
