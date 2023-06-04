@@ -1,6 +1,26 @@
 Saludos, 
 Me siento orgulloso de presentar JoyCode News, un blog sobre desarrollo de videojuegos, y también mi primer proyecto de escala considerable para poner en un portafolio de frontend.
-A continuación, repasaré cada sección del blog para comentar los detalles que podrían ser más interesantes.
+A continuación, presentaré los desafíos que desde el primer día me encontré, y también los desafíos autoimpuestos.
+
+<h2>Desafíos</h2>
+
+Sin duda el primer desafío fue uno de los más grandes de todos.... ¡Decidir de qué hacer la página! Todo en lo que pensaba era o demasiado fácil, o demasiado difícil para mi nivel. Y eso que suelo tirar por encima de mis posibilidades.
+<p>Luego de unos días de la clase sobre los Lineamientos del proyecto final, finalmente me decidí por hacer un blog. Ya que viendo videos sobre las mejores ideas para tu portafolio web, encontré muy seguido que hacer un blog es una estupenda idea, ya que condensa muchísimas cosas que te podrías topar a la hora de trabajar en una empresa real o por tu cuenta.  Ya solo faltaba decidir el tema del blog, y eso no fue muy difícil para mí, ya que el tema de los videojuegos lo domino bastante bien. </p>
+
+<h2>Retos autoimpuestos</h2>
+
+Si no recuerdo mal, el profe Uriel nos dijo que nos pusiéramos desafíos, pero es algo que hubiera hecho de todos modos, ya que aquí también aplica lo de que "lo que no te mata, te hace más fuerte". A continuación presentaré algunas cosas que me marqué como desafío. 
+
+   <ol>
+<li>Generar contenido dinámico con Javascript</li>
+<li>No usar frameworks, librerías ni preprocesadores</li>
+<li>Tener un diseño decente</li>
+<li>Replicar cosas que me gustan de otras webs</li>
+<li>Aportar cierta originalidad</li>
+   </ol>
+
+   
+Para aquellos que quieran saber qué pude hacer y qué no, repasaré cada sección del blog para comentar los detalles más relevantes.
 
 <h2>1. Navbar </h2> 
 
