@@ -339,7 +339,7 @@ Como bien sabéis, este motor no solamente se utiliza en juegos, si no que tambi
       "Los mejores canales de YouTube sobre desarrollo de videojuegos en español",
     editor: "Daniel Lizama",
     date: "Abr 18 2023",
-    IMG: "https://scontent.fcjs3-2.fna.fbcdn.net/v/t1.15752-9/346150435_1020843602232889_7172892165946108857_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_ohc=kQmBj7SCWfYAX93L2MK&_nc_ht=scontent.fcjs3-2.fna&oh=03_AdQpmcTftfdRYWlBr0SSWpp02ALl9HHxbTEVuCmg8NBnnA&oe=648CBEDB",
+    IMG: "./IMG/guinxualvajasper.jpg",
     IMGalt: "Foto de Alva Majo, Guinxu y Jasperdev",
     id: 8,
     articleText: `<p>
